@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kumbh+Sans:wght@100..900&family=Lexend+Exa:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+  <link rel="shortcut icon" type="imagex/png" href="../images/icon.ico">
+  <title>Catálogo de IA</title>
+  <link rel="stylesheet" href="style-solucoes.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-top">
+      <a href="https://documentacao.senior.com.br/"><h1 class="logo">PORTAL DE DOCUMENTAÇÃO</h1></a>
+      <a href="https://www.senior.com.br/" target="_blank">
+      <img src="../images/logo-senior.png" alt="Logo da Empresa" class="company-logo" />
+      </a>
+    </div>
+  
+    <!-- Menu + Hero -->
+    <div class="header-menu hero">
+      <div class="container">
+        <div class="nav-bar">
+          <button class="menu-toggle">
+            ☰
+          </button>
+          <ul class="menu">
+            <li class="dropdown">
+              <a href="../index.html">Catálogo</a>
+            </li>
+            <li class="dropdown">
+              <a href="https://materiais.senior.com.br/manifesto-ia-senior?hs_preview=dlQUcUYx-187324225575">Manifesto IA</a>
+            </li>
+            <li class="dropdown">
+              <a href="https://www.senior.com.br/inteligencia-artificial">Soluções</a>
+              
+            </li>
+            <li class="dropdown">
+              <a href="https://www.senior.com.br/inteligencia-artificial-guia-completo">Guia Completo</a>
+              
+            </li>
+          </ul>
+         
+        </div>
+      
+    
+  
+        <!-- Hero Content à esquerda -->
+      
+      </div>
+    </div>
+  </header>
+
+  <nav class="breadcrumb">
+    <div class="container">
+      <a href="../index.html">Catálogo</a> &raquo; <span id="breadcrumb-card-title">Card</span>
+    </div>
+  </nav>
+      
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1 id="card-title">Título</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p id="card-description">Descrição</p>
+      <ul>
+        <li><strong>Linha de Produto:</strong> <span id="card-linhaProduto"></span></li>
+        <li><strong>Segmento:</strong> <span id="card-segmento"></span></li>
+        <li><strong>Contexto:</strong> <span id="card-contexto"></span></li>
+        <li><strong>Situação:</strong> <span id="card-situacao"></span></li>
+      </ul>
+      <h2>Benefícios</h2>
+      <div id="card-beneficios" class="card-beneficios"></div>
+      
+    </div>
+    <div class="tema-noticia">
+      <h5>IA relacionada ao produto:</h5>
+      <div class="btn-tema-noticia">
+        <a id="card-produto-link" href="#">Produto</a>
+      </div>
+    </div>
+    <div class="voltar-catalogo">
+      <a href="../index.html" class="btn-voltar">← Voltar ao Catálogo</a>
+    </div>
+  </section>
+
+      <!-- FEEDBACK -->
+
+      <div class="feedback-box">
+        <p>Esse artigo ajudou você?</p>
+        <div class="feedback-buttons">
+          <button class="btn-feedback" data-feedback="sim">👍 Sim</button>
+          <button class="btn-feedback" data-feedback="nao">👎 Não</button>
+        </div>
+      </div>
+
+
+      <!-- Modal de Sugestão -->
+<div id="feedbackModal" class="modal-overlay">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h3>Gostaria de deixar uma sugestão para melhorar esta página?</h3>
+    <p>Este é um espaço para sugerir melhorias no Portal de Documentação da Senior.</p>
+
+    <label for="nomeEmail">Nome/E-mail (Opcional):</label>
+    <input type="text" id="nomeEmail" maxlength="100" />
+
+    <label for="comentario">Deixe seu comentário (até 100 caracteres):</label>
+    <textarea id="comentario" maxlength="100"></textarea>
+
+    <div class="privacidade-box">
+      <input type="checkbox" id="consentimento" />
+      <label for="consentimento">
+        Li e concordo com a <a href="https://www.senior.com.br/politica-de-privacidade/" target="_blank">Política de Privacidade</a> da Senior, que pode usar as informações aqui fornecidas por mim para entrar em contato comigo via e-mail para ações de natureza informativa. Posso revogar meu consentimento a qualquer momento enviando um e-mail para <a href="mailto:encarregado@senior.com.br">encarregado@senior.com.br</a>.
+      </label>
+    </div>
+
+<div class="btn-enviar-feedback">
+    <button id="enviarComentario" class="btn-enviar">Enviar comentário</button>
+</div>
+
+
+    <p class="suporte-info">Se você estiver buscando um atendimento, entre em contato com o <a href="https://suporte.senior.com.br" target="_blank" class="suporte-info-link">Suporte Senior</a>.</p>
+  </div>
+</div>
+
+      
+
+  
+    
+      <!-- Banner de Marketing -->
+      <section class="marketing-banner">
+        <div class="container">
+          <a href="https://materiais.senior.com.br/monitor-legal-senior" target="_blank">
+            <picture>
+              <!-- Imagem para telas menores que 768px -->
+              <source media="(max-width: 767px)" srcset="../images/banner-mobile.png" />
+              <!-- Imagem padrão para telas maiores -->
+              <img src="../images/banner-exemplo.png" alt="Marketing banner" />
+            </picture>
+          </a>
+        </div>
+      </section>
+
+   
+
+
+   
+
+
+    <div class="menu-footer">
+      <div class="container">
+        <div class="menu-central">
+          <nav>
+            <a href="https://documentacao.senior.com.br/">Portal de Documentação</a>
+            <a href="https://suporte.senior.com.br/hc/pt-br?utm_source=portal-documentacao&utm_medium=referral&utm_campaign=rodape">Base de Conhecimento</a>
+            <a href="#">Contato</a>
+            <a href="https://www.senior.com.br/servicos/universidade-corporativa-senior?utm_source=portal-documentacao&utm_medium=referral&utm_campaign=rodape">Universidade Corporativa</a>
+            <a href="https://www.senior.com.br/blog">Blog da Senior</a>
+          </nav>
+        </div>
+    
+        <a href="https://suporte.senior.com.br/hc/pt-br" class="btn-ajuda">Suporte Senior</a>
+      </div>
+    </div>
+    
+
+
+
+
+
+
+      <!-- Rodapé -->
+      <footer class="footer">
+        <div class="container">
+          <a href="https://www.senior.com.br/" target="_blank">
+            <img class="logo-footer" src="../images/logo-senior-verde.png" alt="Logo Senior">
+          </a>
+          <p>&copy; 2025 Portal de Exigências Legais - Senior Sistemas S.A -  Todos os direitos reservados.</p>
+          
+        </div>
+      </footer>
+
+      <script>
+
+
+// Parte do menu mobile
+  const menuToggle = document.querySelector(".menu-toggle");
+  const mobileMenu = document.createElement("div");
+  mobileMenu.classList.add("mobile-menu");
+
+  mobileMenu.innerHTML = `
+     <span class="close-menu">✖</span>
+  <ul class="mobile-menu-list">
+    <li class="mobile-dropdown">
+      <a href="https://materiais.senior.com.br/manifesto-ia-senior?hs_preview=dlQUcUYx-187324225575">Manifesto IA</a>
+    </li>
+    <li class="mobile-dropdown">
+      <a href="https://www.senior.com.br/inteligencia-artificial">Soluções</a>
+    </li>
+    <li class="mobile-dropdown">
+      <a href="https://www.senior.com.br/inteligencia-artificial-guia-completo">Guia Completo</a>
+    </li>
+  </ul>
+`;
+  document.body.appendChild(mobileMenu);
+  const closeMenu = mobileMenu.querySelector(".close-menu");
+
+  function resetDropdowns() {
+    const dropdowns = mobileMenu.querySelectorAll(".dropdown-menu");
+    dropdowns.forEach(menu => {
+      menu.classList.remove("open");
+      menu.style.maxHeight = "0px";
+      menu.style.opacity = "0";
+    });
+  }
+
+  menuToggle.addEventListener("click", function () {
+    mobileMenu.classList.add("show");
+    document.body.classList.add("menu-open");
+  });
+
+  closeMenu.addEventListener("click", function () {
+    mobileMenu.classList.remove("show");
+    document.body.classList.remove("menu-open");
+    resetDropdowns();
+  });
+
+  document.addEventListener("click", function (e) {
+    if (!mobileMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+      mobileMenu.classList.remove("show");
+      document.body.classList.remove("menu-open");
+      if (window.innerWidth <= 768) {
+        // menuToggle.style.display = "block"; // agora controlado por CSS
+      }
+      resetDropdowns();
+    }
+  });
+
+  document.querySelectorAll(".mobile-dropdown > a").forEach((item) => {
+    item.addEventListener("click", function (e) {
+      const submenu = this.nextElementSibling;
+  
+      // Só previne o clique se houver submenu dropdown
+      if (submenu && submenu.classList.contains("dropdown-menu")) {
+        e.preventDefault();
+  
+        if (submenu.classList.contains("open")) {
+          submenu.classList.remove("open");
+          submenu.style.maxHeight = "0px";
+          submenu.style.opacity = "0";
+        } else {
+          mobileMenu.querySelectorAll(".dropdown-menu").forEach((menu) => {
+            menu.classList.remove("open");
+            menu.style.maxHeight = "0px";
+            menu.style.opacity = "0";
+          });
+  
+          submenu.classList.add("open");
+          submenu.style.maxHeight = submenu.scrollHeight + "px";
+          submenu.style.opacity = "1";
+        }
+      }
+    });
+  });
+
+  window.addEventListener("resize", function () {
+    const isDesktop = window.innerWidth > 768;
+    const desktopMenu = document.querySelector(".menu");
+
+    mobileMenu.classList.remove("show");
+    document.body.classList.remove("menu-open");
+    resetDropdowns();
+
+    if (desktopMenu) {
+      desktopMenu.style.display = isDesktop ? "flex" : "none";
+      desktopMenu.classList.remove("show");
+    }
+
+    document.querySelectorAll(".dropdown-menu").forEach(menu => {
+      menu.style.removeProperty("max-height");
+      menu.style.removeProperty("opacity");
+      menu.style.removeProperty("display");
+    });
+  });
+
+
+
+        const params = new URLSearchParams(window.location.search);
+        const slug = params.get("slug");
+        const cardsData = JSON.parse(localStorage.getItem("cardsData")) || [];
+    
+        function slugify(text) {
+  return text
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "") // remove acentos
+    .replace(/[^a-z0-9]+/g, "-")     // troca tudo por hífen
+    .replace(/(^-|-$)+/g, "");       // remove hífens extras
+}
+
+        console.log("slug buscado:", slug);
+console.log("slugs disponíveis:", cardsData.map(c => slugify(c.title)));
+    
+        const card = cardsData.find(c => slugify(c.title) === slug);
+    
+        if (!card) {
+          document.querySelector(".noticia").innerHTML = '<h2>Card não encontrado</h2><a href="../index.html">Voltar</a>';
+        } else {
+          document.getElementById("card-title").textContent = card.title;
+          document.getElementById("breadcrumb-card-title").textContent = card.title;
+          document.getElementById("card-description").textContent = card.description !== "nan" ? card.description : "Sem descrição disponível.";
+          document.getElementById("card-linhaProduto").textContent = card.linhaProduto || "-";
+          document.getElementById("card-segmento").textContent = card.segmento || "-";
+          document.getElementById("card-contexto").textContent = card.contexto !== "nan" ? card.contexto : "-";
+          document.getElementById("card-situacao").textContent = card.situacao !== "nan" ? card.situacao : "-";
+          document.getElementById("card-beneficios").textContent = card.beneficios !== "nan" ? card.beneficios : "-";
+          document.getElementById("card-produto-link").textContent = card.linhaProduto;
+          document.getElementById("card-produto-link").href = `../index.html?linhaProduto=${encodeURIComponent(card.linhaProduto)}&origem=card`;
+
+          if (card.beneficios) {
+    document.getElementById("card-beneficios").innerHTML = card.beneficios;
+  }
+        }
+      
+      // MODAL FEEDBACK //
+
+// Abre o modal ao clicar em qualquer botão de feedback
+document.querySelectorAll('.btn-feedback').forEach(button => {
+  button.addEventListener('click', () => {
+    document.getElementById('feedbackModal').style.display = 'block';
+  });
+});
+
+// Fecha o modal ao clicar no "X"
+document.querySelector('.close-modal').addEventListener('click', () => {
+  document.getElementById('feedbackModal').style.display = 'none';
+});
+
+// Fecha ao clicar fora da área do modal
+window.addEventListener('click', (event) => {
+  const modal = document.getElementById('feedbackModal');
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+
+document.getElementById('enviarComentario').addEventListener('click', () => {
+  const comentario = document.getElementById('comentario').value.trim();
+  const consentimento = document.getElementById('consentimento').checked;
+
+  if (!comentario) {
+    alert('Por favor, escreva um comentário.');
+    return;
+  }
+
+  if (!consentimento) {
+    alert('É necessário concordar com a Política de Privacidade.');
+    return;
+  }
+
+  // Aqui poderia enviar o comentário via fetch() ou integração
+  alert('Comentário enviado com sucesso! Obrigado pelo feedback.');
+
+  // Fecha o modal após envio
+  document.getElementById('feedbackModal').style.display = 'none';
+
+  // Limpa campos
+  document.getElementById('comentario').value = '';
+  document.getElementById('nomeEmail').value = '';
+  document.getElementById('consentimento').checked = false;
+});
+
+      
+      
+      </script>
+      <script src="../script.js"></script>
+      
+
+    </body>
+    </html>
+    
