@@ -84,7 +84,7 @@
       </div>
     </div>
     <div class="voltar-catalogo">
-      <a href="catalogo-ia/index.html" class="btn-voltar">← Voltar ao Catálogo</a>
+      <a href="index.html" class="btn-voltar">← Voltar ao Catálogo</a>
     </div>
   </section>
 
@@ -320,7 +320,7 @@ console.log("slugs disponíveis:", cardsData.map(c => slugify(c.title)));
           document.getElementById("card-situacao").textContent = card.situacao !== "nan" ? card.situacao : "-";
           document.getElementById("card-beneficios").textContent = card.beneficios !== "nan" ? card.beneficios : "-";
           document.getElementById("card-produto-link").textContent = card.linhaProduto;
-          document.getElementById("card-produto-link").href = `../index.html?linhaProduto=${encodeURIComponent(card.linhaProduto)}&origem=card`;
+          document.getElementById("card-produto-link").href = `index.html?linhaProduto=${encodeURIComponent(card.linhaProduto)}&origem=card`;
 
           if (card.beneficios) {
     document.getElementById("card-beneficios").innerHTML = card.beneficios;
